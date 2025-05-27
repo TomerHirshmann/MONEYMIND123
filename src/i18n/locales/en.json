@@ -1,0 +1,85 @@
+{
+  "common": {
+    "appName": "MoneyMind",
+    "dashboard": "Dashboard",
+    "transactions": "Transactions",
+    "insights": "Insights",
+    "goals": "Goals",
+    "settings": "Settings",
+    "aiChat": "AI Chat",
+    "loading": "Loading...",
+    "save": "Save",
+    "cancel": "Cancel",
+    "edit": "Edit",
+    "delete": "Delete",
+    "search": "Search",
+    "filter": "Filter",
+    "darkMode": "Dark Mode"
+  },
+  "auth": {
+    "signIn": "Sign In",
+    "signUp": "Sign Up",
+    "email": "Email address",
+    "password": "Password",
+    "needAccount": "Need an account? Sign up",
+    "alreadyHaveAccount": "Already have an account? Sign in"
+  },
+  "dashboard": {
+    "description": "Dashboard showing your current financial status - automatically updated based on your business data.",
+    "summary": {
+      "totalIncome": "Total Income",
+      "totalExpenses": "Total Expenses",
+      "netBalance": "Net Balance",
+      "monthlyProfit": "Monthly Profit"
+    },
+    "charts": {
+      "profitLoss": "Profit/Loss",
+      "expensesByCategory": "Expenses by Category"
+    },
+    "aiInsight": {
+      "title": "Daily Insight",
+      "viewFullAnalysis": "View Full Analysis"
+    }
+  },
+  "transactions": {
+    "add": "Add Transaction",
+    "edit": "Edit Transaction",
+    "delete": "Delete Transaction",
+    "searchPlaceholder": "Search transactions...",
+    "type": {
+      "income": "Income",
+      "expense": "Expense"
+    },
+    "fields": {
+      "type": "Type",
+      "category": "Category",
+      "amount": "Amount",
+      "date": "Date",
+      "notes": "Notes"
+    },
+    "categories": {
+      "advertising": "Advertising",
+      "rent": "Rent",
+      "services": "Services",
+      "software": "Software",
+      "salary": "Salary",
+      "consulting": "Consulting",
+      "other": "Other"
+    }
+  },
+  "settings": {
+    "title": "Settings",
+    "language": "Language",
+    "theme": {
+      "title": "Theme",
+      "light": "Light",
+      "dark": "Dark",
+      "system": "System"
+    },
+    "currency": {
+      "title": "Currency",
+      "ils": "₪ ILS",
+      "usd": "$ USD"
+    }
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "common": {
+    "appName": "מאני-מיינד",
+    "dashboard": "לוח בקרה",
+    "income": "הכנסות",
+    "expenses": "הוצאות",
+    "transactions": "עסקאות",
+    "insights": "תובנות",
+    "goals": "יעדים",
+    "settings": "הגדרות",
+    "aiChat": "צ'אט AI",
+    "loading": "טוען...",
+    "save": "שמירה",
+    "cancel": "ביטול",
+    "edit": "עריכה",
+    "delete": "מחיקה",
+    "search": "חיפוש",
+    "filter": "סינון",
+    "darkMode": "מצב כהה",
+    "select": "בחר",
+    "actions": "פעולות",
+    "status": {
+      "paid": "שולם",
+      "unpaid": "לא שולם",
+      "pending": "ממתין לתשלום"
+    }
+  },
+  "auth": {
+    "signIn": "כניסה",
+    "signUp": "הרשמה",
+    "email": "כתובת אימייל",
+    "password": "סיסמה",
+    "needAccount": "אין לך חשבון? הירשם",
+    "alreadyHaveAccount": "יש לך חשבון? היכנס"
+  },
+  "dashboard": {
+    "description": "לוח בקרה המציג את מצבך הפיננסי הנוכחי – מעודכן אוטומטית לפי נתוני העסק שלך.",
+    "summary": {
+      "totalIncome": "סה״כ הכנסות",
+      "totalExpenses": "סה״כ הוצאות",
+      "netBalance": "יתרה נטו",
+      "monthlyProfit": "רווח חודשי"
+    },
+    "charts": {
+      "profitLoss": "רווח/הפסד",
+      "expensesByCategory": "הוצאות לפי קטגוריה"
+    },
+    "aiInsight": {
+      "title": "תובנה יומית",
+      "viewFullAnalysis": "צפה בניתוח מלא"
+    }
+  },
+  "transactions": {
+    "add": "הוסף עסקה",
+    "edit": "ערוך עסקה",
+    "delete": "מחק עסקה",
+    "searchPlaceholder": "חיפוש עסקאות...",
+    "type": {
+      "income": "הכנסה",
+      "expense": "הוצאה"
+    },
+    "fields": {
+      "type": "סוג",
+      "category": "קטגוריה",
+      "amount": "סכום",
+      "date": "תאריך",
+      "notes": "הערות",
+      "currency": "מטבע",
+      "status": "סטטוס"
+    },
+    "categories": {
+      "advertising": "פרסום",
+      "rent": "שכירות",
+      "services": "שירותים",
+      "software": "תוכנה",
+      "salary": "משכורת",
+      "consulting": "ייעוץ",
+      "other": "אחר"
+    }
+  },
+  "settings": {
+    "title": "הגדרות",
+    "language": "שפה",
+    "theme": {
+      "title": "ערכת נושא",
+      "light": "בהיר",
+      "dark": "כהה",
+      "system": "לפי מערכת"
+    },
+    "currency": {
+      "title": "מטבע ברירת מחדל",
+      "ils": "₪ שקל",
+      "usd": "$ דולר"
+    }
+  },
+  "insights": {
+    "title": "תובנות חכמות",
+    "description": "תובנות AI מותאמות אישית לעסק שלך, מתעדכנות בכל יום",
+    "refresh": "רענן תובנות",
+    "getRecommendations": "קבל המלצות לשיפור",
+    "categories": {
+      "all": "הכל",
+      "advertising": "פרסום",
+      "income": "הכנסות",
+      "software": "תוכנות"
+    }
+  },
+  "goals": {
+    "title": "היעדים שלך לחודש",
+    "addNew": "הוסף יעד חדש",
+    "systemRecommendation": "המלצת המערכת",
+    "getActionPlan": "קבל תוכנית פעולה",
+    "progress": "התקדמות",
+    "remaining": "נותרו {{amount}} להשגת היעד",
+    "status": {
+      "onTrack": "הכל תקין",
+      "nearLimit": "אתה קרוב לחריגה",
+      "overBudget": "חריגה בתקציב – בדוק מחדש"
+    }
+  }
+}
