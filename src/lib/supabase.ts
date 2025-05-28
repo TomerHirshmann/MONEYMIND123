@@ -106,6 +106,81 @@ export const removeViewer = async (userId: string) => {
   }
 };
 
+// Transaction operations
+export const getTransactions = async (userId: string, type?: 'income' | 'expense') => {
+  try {
+    let query = supabase
+      .from('transactions')
+      .select('*')
+      .eq('user_id', userId)
+      .order('date', { ascending: false });
+
+    if (type) {
+      query = query.eq('type', type);
+    }
+
+    const { data, error } = await query;
+
+    if (error) throw error;
+    return data || [];
+  } catch (error) {
+    console.error('Error getting transactions:', error);
+    throw error;
+  }
+};
+
+export const addTransaction = async (userId: string, transaction: any) => {
+  try {
+    const { data, error } = await supabase
+      .from('transactions')
+      .insert({
+        ...transaction,
+        user_id: userId,
+        created_at: new Date().toISOString()
+      })
+      .select()
+      .single();
+
+    if (error) throw error;
+    return data;
+  } catch (error) {
+    console.error('Error adding transaction:', error);
+    throw error;
+  }
+};
+
+export const updateTransaction = async (transactionId: string, transaction: any) => {
+  try {
+    const { data, error } = await supabase
+      .from('transactions')
+      .update(transaction)
+      .eq('id', transactionId)
+      .select()
+      .single();
+
+    if (error) throw error;
+    return data;
+  } catch (error) {
+    console.error('Error updating transaction:', error);
+    throw error;
+  }
+};
+
+export const deleteTransaction = async (transactionId: string) => {
+  try {
+    const { error } = await supabase
+      .from('transactions')
+      .delete()
+      .eq('id', transactionId);
+
+    if (error) throw error;
+    return true;
+  } catch (error) {
+    console.error('Error deleting transaction:', error);
+    throw error;
+  }
+};
+
 // Subscription operations
 export const getSubscription = async (userId: string) => {
   try {
