@@ -103,7 +103,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 
   const signInWithGoogle = async () => {
     try {
-      const { error } = await supabase.auth.signInWithOAuth({
+      const { data, error } = await supabase.auth.signInWithOAuth({
         provider: 'google',
         options: {
           redirectTo: `${window.location.origin}/auth/callback`,
@@ -116,6 +116,11 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 
       if (error) {
         throw new Error(handleAuthError(error));
+      }
+
+      // If we have a provider token, the sign-in was successful
+      if (data?.provider) {
+        navigate('/auth/callback');
       }
     } catch (error: any) {
       console.error('Google sign in error:', error);
